@@ -1,0 +1,29 @@
+{
+  "extends": ["airbnb", "prettier"],
+  // nos ayudam a optimizar nuestro codigo
+  "plugins": ["prettier"],
+  // son un estandar para que el codigo cumpla un objetivo claro y que maneje un formato establecido con las mejores caracteristicas del codigo
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error"
+  },
+  // son formas en la que podemos trabajar con diferentes archivos
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  },
+  "parser": "babel-eslint" // va a identificar todo lo que va hacer nuestro producto
+}
